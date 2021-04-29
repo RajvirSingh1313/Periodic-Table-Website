@@ -8,8 +8,7 @@
         const element = data.elements[index];
 
         block = document.createElement('div');
-        // block.innerText = element.symbol;
-        block.innerHTML = `<h4>${index+1}</h4><h1>${element.symbol}</h1>`;
+        block.innerHTML = `<h4>${index+1}</h4><h1>${element.symbol}</h1><span>${element.summary} <a href="${element.source}" target="_blank">Read More...</a></span>`;
         block.id = `element${index+1}`;
 
         if(element.category.split(' ').includes('nonmetal')){
@@ -43,4 +42,3 @@
         contaienr.appendChild(block);
     }
 })()
-

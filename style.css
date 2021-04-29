@@ -11,6 +11,7 @@ body{
     display:flex;
     background-color:#2f3539;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #heading{
@@ -49,6 +50,24 @@ body{
 #container div h4{
     font-size:18px;
     font-weight: bold;
+}
+#container div span{
+    visibility:hidden;
+    position:absolute;
+    width:35%;
+    margin:56px;
+    padding:5px;
+    color:#2f3539;
+    background-color:rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+#container div span a{
+    color:white;
+}
+
+#container div:hover span{
+    visibility:visible;
 }
 
 
